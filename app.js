@@ -58,3 +58,12 @@ function showMyDB(hidden) {
 }
 
 showMyDB(personalMovieDB.private)
+
+
+function writeYorGenres() {
+		for(let i = 1; i <= 3; i++) {
+	const genre = prompt(`Your favorite genre is numbered ${i}`)
+			personalMovieDB.genres[i - 1] = genre
+		}
+}
+writeYorGenres()
